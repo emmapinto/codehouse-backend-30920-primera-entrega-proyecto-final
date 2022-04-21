@@ -7,7 +7,10 @@ const router = express.Router();
 const productContainer = new ProductContainer(__dirname + "/data/products.txt");
 
 const filePath = (filename) => {
-  const urlBase = process.env.URLBASE || "http://localhost:8080";
+  // const urlBase = process.env.URLBASE || "http://localhost:8080";
+  const production  = "https://coder-backend-ecommerce.herokuapp.com"; //Actualizar con la URL BASE del HOST!!!
+  const development = "http://localhost:8080";
+  const urlBase = (process.env.NODE_ENV ? production : development);
   return `${urlBase}/images/${filename}`;
 };
 

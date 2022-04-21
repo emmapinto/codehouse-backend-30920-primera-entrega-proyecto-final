@@ -13,16 +13,6 @@
         "timestamp": 1650408048304
       },
       {
-        "title": "Remera",
-        "price": 10333,
-        "description": "Remera de algodón manga corta colo verde agua.",
-        "code": "RE9987",
-        "stock": 99,
-        "thumbnail": "http://localhost:8080/images/1650409008647.png",
-        "id": 5,
-        "timestamp": 1650409008649
-      },
-      {
         "title": "Reloj",
         "price": 14300,
         "description": "Accesorio reloj clásico de aguja con malla de cuero.",
@@ -33,14 +23,14 @@
         "timestamp": 1650408276796
       },
       {
-        "title": "Medias",
-        "price": 360,
-        "description": "Pack de medias cortas de algodón.",
-        "code": "ME789",
-        "stock": 1333,
-        "thumbnail": "http://localhost:8080/images/1650415947873.png",
-        "id": 9,
-        "timestamp": 1650415947875
+        "title": "Gorra",
+        "price": 990,
+        "description": "Accesoria con visera para cubrir la cabeza colo negro.",
+        "code": "GO6020",
+        "stock": 220,
+        "thumbnail": "http://localhost:8080/images/1650408103070.png",
+        "id": 2,
+        "timestamp": 1650408103072
       }
     ],
     "timestamp": 1650408324908

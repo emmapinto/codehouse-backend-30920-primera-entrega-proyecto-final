@@ -40,16 +40,6 @@
     "timestamp": 1650409008649
   },
   {
-    "title": "Vestido",
-    "price": 9600,
-    "description": "Vestido largo para eventos color amarillo.",
-    "code": "VE2525",
-    "stock": 85,
-    "thumbnail": "http://localhost:8080/images/1650415826868.jpeg",
-    "id": 7,
-    "timestamp": 1650415826871
-  },
-  {
     "title": "Zapatos",
     "price": 8590,
     "description": "Zapatos de cuero color negro para hombre.",
@@ -88,5 +78,15 @@
     "thumbnail": "http://localhost:8080/images/1650418582772.png",
     "id": 11,
     "timestamp": 1650418582774
+  },
+  {
+    "title": "Ojotas",
+    "price": 1950,
+    "description": "Ojotas color azul marino marca Adidas.",
+    "code": "OJ3310",
+    "stock": 220,
+    "thumbnail": "http://localhost:8080/images/1650566998603.jpeg",
+    "id": 13,
+    "timestamp": 1650566998604
   }
 ]
