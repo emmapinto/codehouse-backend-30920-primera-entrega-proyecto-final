@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "products": [
+      {
+        "title": "Zapatillas",
+        "price": 11450,
+        "description": "Calzado marca Adidas original color azul.",
+        "code": "AD1050",
+        "stock": 200,
+        "thumbnail": "http://localhost:8080/images/1650408048300.png",
+        "id": 1,
+        "timestamp": 1650408048304
+      },
+      {
+        "title": "Remera",
+        "price": 10333,
+        "description": "Remera de algodón manga corta colo verde agua.",
+        "code": "RE9987",
+        "stock": 99,
+        "thumbnail": "http://localhost:8080/images/1650409008647.png",
+        "id": 5,
+        "timestamp": 1650409008649
+      },
+      {
+        "title": "Reloj",
+        "price": 14300,
+        "description": "Accesorio reloj clásico de aguja con malla de cuero.",
+        "code": "RE2230",
+        "stock": 150,
+        "thumbnail": "http://localhost:8080/images/1650408276795.jpeg",
+        "id": 3,
+        "timestamp": 1650408276796
+      },
+      {
+        "title": "Medias",
+        "price": 360,
+        "description": "Pack de medias cortas de algodón.",
+        "code": "ME789",
+        "stock": 1333,
+        "thumbnail": "http://localhost:8080/images/1650415947873.png",
+        "id": 9,
+        "timestamp": 1650415947875
+      }
+    ],
+    "timestamp": 1650408324908
+  }
+]
