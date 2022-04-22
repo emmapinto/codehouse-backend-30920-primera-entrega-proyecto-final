@@ -13,6 +13,7 @@
 - `/api/productos/:idProduct` DELETE: Elimina un producto según su ID (Solo para admins).
 
 ### Carrito
+- `/api/carrito` GET: Devuelve todos los carritos.
 - `/api/carrito` POST: Crea un carrito y lo guarda en el servidor. Campos requeridos: products (array con ids de productos a agregar).
 - `/api/carrito/:idCart/productos` POST: Agrega productos a un carrito existente. Campos requeridos: products (array con ids de productos a agregar).
 - `/api/carrito/:idCart/productos` GET: Obtiene los datos de un carrito específico por ID.

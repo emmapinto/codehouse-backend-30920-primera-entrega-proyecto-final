@@ -7,7 +7,7 @@ const router = express.Router();
 const cartContainer = new CartContainer(__dirname + "/data/carts.txt");
 const productContainer = new ProductContainer(__dirname + "/data/products.txt");
 
-
+//POST CARRITOS
 router.post("/", async (req, res) => {
   const products = req.body.products.map(Number);
   const allProducts = (await productContainer.getAll()).payload;
@@ -18,20 +18,27 @@ router.post("/", async (req, res) => {
   res.json(cart);
 });
 
+//GET CARRITOS
+router.get("/", async (req, res) => {
+  const cart = await cartContainer.getAll();
+  res.json(cart);
+});
 
+//BORRAR CARRITO por ID
 router.delete("/:id", async (req, res) => {
   const id = parseInt(req.params.id);
   const cart = await cartContainer.deleteById(id);
   res.json(cart);
 });
 
+//GET CARRITO por ID
 router.get("/:id/productos", async (req, res) => {
   const id = parseInt(req.params.id);
   const cart = await cartContainer.getById(id);
   res.json(cart);
 });
 
-
+//AGREGAR PRODUCTOS a un CARRITO buscado por su ID
 router.post("/:id/productos", async (req, res) => {
   const id = parseInt(req.params.id);
   const products = req.body.products.map(Number);
@@ -47,7 +54,7 @@ router.post("/:id/productos", async (req, res) => {
   }
 });
 
-
+//BORRAR un PRODUCTO de un CARRITO buscando por sus ID´s
 router.delete("/:id/productos/:productId", async (req, res) => {
   const id = parseInt(req.params.id);
   const productId = parseInt(req.params.productId);

@@ -23,6 +23,22 @@ if (cart !== undefined && cart !== null) {
         }
       });
   });
+
+  /* Remueve el contenido del Item "Cart" del localStorage para reiniciar el carrito en el FRONT pero lo conserva en el TXT */
+  document.getElementById("send-cart").addEventListener("click", () => {
+    if (window.localStorage.getItem("cart") != (undefined || null) ) {
+      window.localStorage.removeItem("cart");
+      window.location.reload();
+    } else {
+      Swal.fire({
+        title: "Error",
+        text: "El carrito que intenta enviar esta vacío!",
+        icon: "error",
+        timer: 2000,
+      });
+    }
+  });
+
 }
 
 cartItems = [];
